@@ -1,3 +1,97 @@
 body{
-    background-image: src('flappybird.png');
+    background-image: url('flappybird.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
 }
+
+.gameContainer{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 25px;
+}
+
+#bird{
+    position: absolute;
+}
+
+
+#pipe1{
+    background-color: hsl(120, 89%, 41%);
+    width: 60px;
+    height: 270px;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid black;
+    top: 0;
+    left: 20vw;
+}
+
+
+#pipe4{
+    background-color: hsl(120, 89%, 41%);
+    width: 60px;
+    height: 270px;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid black;
+    bottom: 0;
+    left: 20vw;
+}
+
+
+#pipe5{
+    background-color: hsl(120, 89%, 41%);
+    width: 60px;
+    height: 210px;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid black;
+    top: 0;
+    right: 20vw;
+}
+
+
+
+#pipe7{
+    background-color: hsl(120, 89%, 41%);
+    width: 60px;
+    height: 330px;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid black;
+    bottom: 0;
+    right: 20vw;
+}
+
+
+
+#pipe9{
+    background-color: hsl(120, 89%, 41%);
+    width: 60px;
+    height: 210px;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid black;
+    bottom: 0;
+    right: 50vw;
+}
+
+
+
+#pipe11{
+    background-color: hsl(120, 89%, 41%);
+    width: 60px;
+    height: 330px;
+    border-radius: 10px;
+    position: absolute;
+    border: 3px solid black;
+    top: 0;
+    right: 50vw;
+}
+
+
+
