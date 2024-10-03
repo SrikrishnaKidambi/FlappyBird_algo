@@ -16,11 +16,12 @@ body{
 
 #bird{
     position: absolute;
+    
 }
 
 
 #pipe1{
-    background-color: hsl(120, 89%, 41%);
+    background-color: hsl(30, 50%, 30%);
     width: 60px;
     height: 270px;
     border-radius: 10px;
@@ -28,11 +29,12 @@ body{
     border: 3px solid black;
     top: 0;
     left: 20vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
 #pipe4{
-    background-color: hsl(120, 89%, 41%);
+    background-color: hsl(30, 50%, 30%);
     width: 60px;
     height: 270px;
     border-radius: 10px;
@@ -40,11 +42,12 @@ body{
     border: 3px solid black;
     bottom: 0;
     left: 20vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
 #pipe5{
-    background-color: hsl(120, 89%, 41%);
+    background-color: hsl(30, 50%, 30%);
     width: 60px;
     height: 210px;
     border-radius: 10px;
@@ -52,12 +55,13 @@ body{
     border: 3px solid black;
     top: 0;
     right: 20vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
 
 #pipe7{
-    background-color: hsl(120, 89%, 41%);
+    background-color: hsl(30, 50%, 30%);
     width: 60px;
     height: 330px;
     border-radius: 10px;
@@ -65,12 +69,13 @@ body{
     border: 3px solid black;
     bottom: 0;
     right: 20vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
 
 #pipe9{
-    background-color: hsl(120, 89%, 41%);
+    background-color: hsl(30, 50%, 30%);
     width: 60px;
     height: 210px;
     border-radius: 10px;
@@ -78,12 +83,11 @@ body{
     border: 3px solid black;
     bottom: 0;
     right: 50vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-
 #pipe11{
-    background-color: hsl(120, 89%, 41%);
+    background-color: hsl(30, 50%, 30%);
     width: 60px;
     height: 330px;
     border-radius: 10px;
@@ -91,7 +95,14 @@ body{
     border: 3px solid black;
     top: 0;
     right: 50vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-
+#score{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    backdrop-filter: blur(5px);
+}
