@@ -1,5 +1,5 @@
 body{
-    background-image: url('flappybird.png');
+    background-image: url('spaceBG.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,7 +21,7 @@ body{
 
 
 #pipe1{
-    background-color: hsl(30, 50%, 30%);
+    background-color: hsl(240, 81%, 60%);
     width: 60px;
     height: 270px;
     border-radius: 10px;
@@ -34,7 +34,7 @@ body{
 
 
 #pipe4{
-    background-color: hsl(30, 50%, 30%);
+    background-color: hsl(16, 91%, 40%);
     width: 60px;
     height: 270px;
     border-radius: 10px;
@@ -47,7 +47,7 @@ body{
 
 
 #pipe5{
-    background-color: hsl(30, 50%, 30%);
+    background-color: hsl(16, 91%, 40%);
     width: 60px;
     height: 210px;
     border-radius: 10px;
@@ -61,7 +61,7 @@ body{
 
 
 #pipe7{
-    background-color: hsl(30, 50%, 30%);
+    background-color: hsl(240, 81%, 60%);
     width: 60px;
     height: 330px;
     border-radius: 10px;
@@ -75,7 +75,7 @@ body{
 
 
 #pipe9{
-    background-color: hsl(30, 50%, 30%);
+    background-color: hsl(240, 81%, 60%);
     width: 60px;
     height: 210px;
     border-radius: 10px;
@@ -87,7 +87,7 @@ body{
 }
 
 #pipe11{
-    background-color: hsl(30, 50%, 30%);
+    background-color: hsl(16, 91%, 40%);
     width: 60px;
     height: 330px;
     border-radius: 10px;
@@ -105,4 +105,37 @@ body{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     padding: 10px;
     backdrop-filter: blur(5px);
+}
+
+#gameOverBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 2em;
+    z-index: 1000;
+    padding: 20px;
+    border: 2px solid red;
+    color: white;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+#gameOverBox button{
+    font-size: 1em;
+    background-color: hsl(300, 88%, 38%);
+    color: aqua;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    border: none;
+}
+#gameOverBox button:hover{
+    background-color: hsl(300, 88%, 30%);
 }
