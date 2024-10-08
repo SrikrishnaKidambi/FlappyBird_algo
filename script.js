@@ -12,7 +12,9 @@ const pipes1=document.querySelectorAll('.pipe1');
 let score=0;
 const scoreCard=document.getElementById('scoreCard');
 const gameOverBox=document.getElementById('gameOverBox');
-const restartBtn=document.getElementById('restart-btn')
+const restartBtn=document.getElementById('restart-btn');
+const instructions=document.getElementById('instructions');
+const startButton=document.getElementById('startbtn');
 
 function resetPipes(){
     pipes.forEach((pipe, index) => {
@@ -24,12 +26,18 @@ function resetPipes(){
 }
 
 window.onload =()=>{
-    startGame();
+    startButton.addEventListener('click', startGame);
+    restartBtn.addEventListener('click', restartGame);
+    instructions.style.display = "block";  
+    gameOverBox.style.display = "none";
+    displayInstructions(); 
 }
 
 function startGame(){
-    gameOverBox.style.display="none";
+    instructions.style.display="none";
+    gameOverBox.style.display='none';
     resetPipes();
+    gamespeed=3;
     birdTop=310;
     birdLeft=50;
     isGameover=false;
@@ -140,9 +148,19 @@ function displayGameBoard(){
     gameOverBox.style.display="block";
     restartBtn.addEventListener('click',()=>{
 
-        score=0;
+        
+    })
+}
+
+function restartGame(){
+    score=0;
         displayScore();
         resetPipes();
-        startGame();
-    })
+        gameOverBox.style.display="none";
+        displayInstructions();
+}
+
+function displayInstructions(){
+    gameOverBox.style.display="none";
+    instructions.style.display="block";
 }

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird</title>
+    <title>Gravity Space</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <p id="score">Score: 0</p>
+    <div id="instructions">
+        <p id="head">Instructions!</p>
+        <p id="statements">Press the space bar to jump!</p>
+        <p id="statements">Avoid the moving bars!</p>
+        <button id="startbtn">Start Game</button>
+    </div>
     <div class="gameContainer">
-        <div id="bird">
-            <image src="ufo.png" height="90px" width="90px"></image>
-        </div>
+            <image id="bird" src="ufo.png" width="90px" ></image>
             <div id="pipe1" class="pipe"></div>      
         <div id="pipe4" class="pipe1"></div>
         <div id="pipe5" class="pipe"></div>
